@@ -29,7 +29,7 @@ public class SpringBootDemoHelloworldApplication {
      * @param who 参数，非必须
      * @return Hello, ${who}
      */
-    @GetMapping("/hello")
+  @GetMapping("/hello")
     public String sayHello(@RequestParam(required = false, name = "who") String who) {
         if (StrUtil.isBlank(who)) {
             who = "World";
